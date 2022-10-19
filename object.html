@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var  alien = 'name';
+var input={
+    name: 'vidya',
+    age: 20,
+    'work exp': 2
+}
+document.write(input.name);
+
+//if u have more than one word then use square brackets while calling the property in a object
+
+document.write(input['work exp']);
+
+document.write(input[alien]);
+
+var input={
+    name: 'vidya',
+    age: 20,
+    'work exp': 2,
+    laptop: {
+        cpu: 2,
+        processor: 5,
+    }
+}
+document.write(input.laptop.cpu);
+///suppose if u dont have that key but you were calling that then use ?
+
+document.write(input.laptop1.cpu);
+
+
+    </script>
+</body>
+</html>

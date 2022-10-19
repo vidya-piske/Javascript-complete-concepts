@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //it is used to sort the given array according to the needs that may be ascending or descending order;
+        var names=['vidya', 'piske', 'swati', 'neha'];
+        var num = names.sort();
+        console.log(num);
+
+        //for numbers sorting it won't work//
+        //descending order//
+        var numbers = [87,34,45,23,45];
+        var sortt = numbers.sort(callbacks);
+        function callbacks(a,b){
+            return b - a;
+        }
+        console.log(sortt);
+
+        //ascending order//
+        var numm = [76,65,79,87,34];
+        var jj = numm.sort(nummy);
+        function nummy(a,b){
+            return b - a;
+        }
+        console.log(jj);
+
+        var constt = [
+        {
+            product: 'laptop',
+            price: 1200,
+        },
+        {
+            product: 'desktop',
+            price: 800,
+        },
+        {
+            product: 'mobile',
+            price: 200,
+        }
+    ];
+    constt.sort((a,b)=> {
+        return a.price - b.price
+    });
+    console.log(constt);
+    </script>
+</body>
+</html>

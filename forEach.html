@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var cars=["car1","car2","car3","car4","car5"];
+        cars.forEach(car);
+        function car(item,index,array){
+            array[index] = item + '0';
+        }
+        cars.forEach(after);
+        function after(item,index){
+            document.write(index + "=>" + item + '<br/>');
+        }
+        var companies=[
+            {
+                name: 'vidya',
+                surname: 'piske',
+            },
+            {
+                name: 'srividya',
+                surname: 'piske',
+            },
+            {
+                name: 'navya',
+                surname: 'piske',
+            }
+        ];
+        companies.forEach((item, index)=>(console.log(item.name)));
+
+        var names=['vidya','piske','nagesh','laxmi'];
+        names.forEach((item,index,array) => console.log(index+item));
+
+    </script>
+</body>
+</html>

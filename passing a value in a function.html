@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function greet(str)
+       {
+        document.write(`Hello ${str}`);
+       }
+       var str = 'vidya';
+       var name = greet(str);
+       console.log(name);
+
+
+       function greety(newwy){
+        document.write(`Hello ${newwy}`);
+       }
+       var newwy = 'vidya rani';
+       var str = greety(newwy);
+       console.log(str);
+
+       //arrow function
+       var vidya = (a,b)=>a+b;
+       var res = vidya(10,20);
+       document.write(res);
+        
+    </script>
+</body>
+</html>

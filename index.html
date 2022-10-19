@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="cal1" step="any" />
+    <select id="ope">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="number" id="cal2" step="any" /><br/><br/>
+    <button onclick="cal()">Calculate</button>
+    <input type="text" name="" id="res" readonly="" />
+    <script type="text/javascript">
+    function cal(){
+        var one = document.getElementById('cal1').value;
+        var two = document.getElementById('cal2').value;
+        var operator = document.getElementById('ope').value;
+        if(operator == '+'){
+            var res = parseInt(one) + parseInt(two);            
+        }
+        if(operator == '-'){
+            var res = parseInt(one) - parseInt(two);            
+        }
+        if(operator == '*'){
+            var res = parseInt(one) * parseInt(two);            
+        }
+        if(operator == '/'){
+            var res = parseInt(one) / parseInt(two);            
+        }
+        document.getElementById('res').value = res;
+    }    
+    </script>
+</body>
+</html>

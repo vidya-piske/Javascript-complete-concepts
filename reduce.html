@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //reduce method: is used to reduce the array to a single value is called as reduce method.
+        // const numbers = [1,2,3,4,5];
+        // const total = numbers.reduce(callback, initialvalue);
+        // function sum(accumulator, value, index, array)
+        //accumulator that holds the initial value in the beginning and then last returned value of that function.
+         
+        var numbers = [1,2,3,4];
+        // var numm = numbers.reduce(num, 0);
+        // function num(accumulator, value){
+        //     return accumulator+value;
+        // }
+        // console.log(numm);
+        var num = numbers.reduce(sum,0);
+        function sum(acc, value){
+            return acc+value;
+        }  
+        console.log(num);
+        
+        var store = [
+        {
+            product: 'laptop',
+            value: 1000,
+            count: 3
+
+        },
+        { 
+            product: 'desktop',
+            value: 1500,
+            count: 4
+        },
+        {
+            product: 'mobile',
+            value: 500,
+            count: 10
+        }
+    ];
+    var total = store.reduce((acc,item) =>acc + item.value * item.count, 0);
+    console.log(total);
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //creates a new array filled with elements that pass a test provided by a function
+        var ages=[20,30,40,50,60,70];
+        ages.filter((age)=>{
+            if(age>20){
+                console.log(age);
+            }
+        })
+
+        var age=[20,30,40,50,60,70];
+        var newage=age.filter((age)=>age>20);
+        console.log(newage);
+
+        var agey=[{
+            name: 'vidya',
+            surname: 'piske',
+        }]
+       agey.forEach((agey,index)=>(agey.name));
+        // console.log(namey);
+
+        var company = [{
+            category: 'Service Based',
+            name: 'VVL',
+        },
+        {
+            category: 'Service Based',
+            name: 'VVL',
+        },
+        {
+            category: 'Product Based',
+            name: 'VVL',
+        },
+        {
+            category: 'Service Based',
+            name: 'VVL',
+        }
+    ]
+    var sb = company.filter(function(company){
+        if(company.category === 'Service Based'){
+            return true;
+        }
+    })
+    console.log(sb);
+
+    var filters = [10,20,30];
+    var nn = filters.filter((n)=>{
+        if(n >20){
+            return true;
+        }
+    })
+    console.log(nn);
+        
+
+    </script>
+</body>
+</html>
